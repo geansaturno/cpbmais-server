@@ -1,5 +1,6 @@
 const Lesson = require('./models/Lesson')
 const { GraphQLScalarType, Kind } = require('graphql')
+const meditations = require('./data/meditations')
 
 const dateScalar = new GraphQLScalarType({
   name: 'Date',
@@ -28,6 +29,9 @@ const resolvers = {
         console.error(error)
         return null
       }
+    },
+    meditations: function () {
+      return meditations
     },
     getLessons: function (_, { date }) {
       const dateSplited = date.split('/')

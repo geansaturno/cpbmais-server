@@ -14,6 +14,12 @@ type Lesson {
     date: Date
 }
 
+type Meditation {
+    id: ID!
+    title: String
+    description: String
+}
+
 input LessonInputs {
     day: String
     title: String!
@@ -26,6 +32,7 @@ input LessonInputs {
 
 type Query {
     lessons: [Lesson]!
+    meditations: [Meditation]!
     getLessons(date: String): [Lesson]
 }
 
