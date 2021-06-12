@@ -18,6 +18,7 @@ type Meditation {
     id: ID!
     title: String
     description: String
+    img: String
 }
 
 input LessonInputs {
