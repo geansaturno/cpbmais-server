@@ -1,4 +1,5 @@
 const Lesson = require('./models/Lesson')
+const Meditations = require('./models/Meditations')
 const { GraphQLScalarType, Kind } = require('graphql')
 const meditations = require('./data/meditations')
 
@@ -42,6 +43,9 @@ const resolvers = {
           date: lessonDateStart
         })
       }
+    },
+    getReading: function () {
+      return Meditations[0]
     }
   },
   Mutation: {
