@@ -6,7 +6,7 @@ module.exports = [
     img: 'https://mais.cpb.com.br/wp-content/uploads/2021/01/capa-ate-que-ele-volte.jpg'
   },
   {
-    id: 'medidation-02',
+    id: 'meditation-02',
     title: 'Sublime Beleza',
     description: 'Meditação da mulher',
     img: 'https://mais.cpb.com.br/wp-content/uploads/2021/01/capa-sublime-beleza.jpg'
