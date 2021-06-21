@@ -44,6 +44,9 @@ const resolvers = {
         })
       }
     },
+    getMeditation: function (_, { readingId }) {
+      return meditations.find(meditation => meditation.id === readingId)
+    },
     getReading: function () {
       return Meditations[0]
     }

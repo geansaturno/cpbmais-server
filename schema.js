@@ -35,6 +35,7 @@ type Query {
     lessons: [Lesson]!
     meditations: [Meditation]!
     getLessons(date: String): [Lesson]
+    getMeditation(readingId: String): Meditation
     getReading(date: String, readingId: String): Lesson
 }
 
